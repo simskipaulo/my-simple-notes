@@ -1,0 +1,1 @@
+COMMENT ON TABLE public.notas IS 'ensaio F1.3.2';
