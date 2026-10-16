@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -18,6 +18,12 @@ export const Route = createFileRoute("/")({
 type Note = { id: number; text: string; date: string };
 
 function Index() {
+  // ensaio F1.3.2: leva o client do Supabase ao bundle publicado, sem consultar o banco
+  useEffect(() => {
+    void import("@/integrations/supabase/client").then(({ supabase }) => {
+      (window as unknown as Record<string, unknown>).__ensaioF132 = supabase;
+    });
+  }, []);
   const [notes, setNotes] = useState<Note[]>([]);
   const [text, setText] = useState("");
 
