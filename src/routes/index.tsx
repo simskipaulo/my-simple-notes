@@ -41,7 +41,7 @@ function Index() {
     <main className="min-h-screen bg-background px-5 py-16">
       <div className="mx-auto max-w-2xl">
         <h1 className="font-display text-5xl text-foreground">Notas</h1>
-        <p className="mt-2 text-muted-foreground">Escreva algo. Ctrl + Enter para salvar.</p>
+        <p className="mt-2 text-muted-foreground">Escreva uma nota. Ctrl + Enter para salvar.</p>
 
         <div className="mt-8 rounded-lg border border-border bg-card p-4 shadow-sm">
           <textarea
