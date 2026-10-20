@@ -4,7 +4,7 @@ import { useState } from "react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Notas — Caderno simples" },
+      { title: "Notas — Caderno simples (ensaio)" },
       { name: "description", content: "Uma página simples para escrever e organizar suas notas." },
       { property: "og:title", content: "Notas — Caderno simples" },
       { property: "og:description", content: "Uma página simples para escrever e organizar suas notas." },
